@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Aula 11 - Frontend</title>
+    <meta charset="utf-8">
+    <script src="js/functions.js"></script>
+  </head>
+  <body>
+    <h2>Padrão REST</h2>
+    <a href="javascript:callFetchWithGet()">Get</a>
+    <a href="javascript:callFetchWithPost('Ragged Wood','Fleet Foxes', '4:12')">Post</a>
+    <a href="javascript:callFetchWithPut(8, 'Ohms', 'Deftones', '4:10')">Put</a>
+    <a href="javascript:callFetchWithDelete(8)">Delete</a>
+    <p id = "json"></p>
+
+    <h2>Formulário Base (POST)</h2>
+    <form id="postForm">
+        <label for= "musica">Música:</label>
+        <input type = "text" id ="musica" name="title"/>
+        <label for= "artista">Artista:</label>
+        <input type = "text" id ="artista" name="artist"/>
+        <label for= "duracao">Duração:</label>
+        <input type = "text" id ="duracao" name="duration"/>
+        <button type ="submit" onclick="return submitPost()">Submit</button>
+    </form>
+
+    <h2>Formulário Base (PUT)</h2>
+    <form id="putForm">
+        <label>Id:<input type="text" name = "id"/></label>
+        <label>Nova Música:<input type="text" name = "title"/></label>
+        <label>Artista:<input type="text" name = "artist"/></label>
+        <label>Duração:<input type="text" name = "duration"/></label>
+
+        <button type ="submit" onclick="return submitPut()">Submit</button>
+    </form>
+
+    <h2>Formulário Base (Delete)</h2>
+    <form id="deleteForm">
+        <label>Id:<input type="text" name = "id"/></label>
+
+        <button type ="submit" onclick="return submitDelete()">Submit</button>
+    </form>
+
+  </body>
+</html>
