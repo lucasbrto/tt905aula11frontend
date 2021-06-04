@@ -6,14 +6,9 @@
     <script src="js/functions.js"></script>
   </head>
   <body>
-    <h2>Padrão REST</h2>
-    <a href="javascript:callFetchWithGet()">Get</a>
-    <a href="javascript:callFetchWithPost('Ragged Wood','Fleet Foxes', '4:12')">Post</a>
-    <a href="javascript:callFetchWithPut(8, 'Ohms', 'Deftones', '4:10')">Put</a>
-    <a href="javascript:callFetchWithDelete(8)">Delete</a>
-    <p id = "json"></p>
+    <h2>Banco de Músicas</h2>
 
-    <h2>Formulário Base (POST)</h2>
+    <h2>Adicionar Música (POST)</h2>
     <form id="postForm">
         <label for= "musica">Música:</label>
         <input type = "text" id ="musica" name="title"/>
@@ -24,7 +19,7 @@
         <button type ="submit" onclick="return submitPost()">Submit</button>
     </form>
 
-    <h2>Formulário Base (PUT)</h2>
+    <h2>Alterar Música (PUT)</h2>
     <form id="putForm">
         <label>Id:<input type="text" name = "id"/></label>
         <label>Nova Música:<input type="text" name = "title"/></label>
@@ -34,7 +29,7 @@
         <button type ="submit" onclick="return submitPut()">Submit</button>
     </form>
 
-    <h2>Formulário Base (Delete)</h2>
+    <h2>Deletar Música (Delete)</h2>
     <form id="deleteForm">
         <label>Id:<input type="text" name = "id"/></label>
 
